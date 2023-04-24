@@ -1,0 +1,31 @@
+ namespace ConsoleApp1_24
+{
+
+    using System;
+
+    public class Program
+    {
+        public static double dobutok(int lenght)
+        {
+            double vollume = Math.Pow(lenght, 3);
+            return vollume;
+        }
+        public static double plocha(int lenght)
+        {
+            double surfaceArea = 6 * Math.Pow(lenght, 2);
+            return surfaceArea;
+        }
+        private static void Main()
+        {
+
+            int lenght = 4;
+            double vollume = Math.Pow(lenght, 3);
+            double surfaceArea = 6 * Math.Pow(lenght, 2);
+
+            Console.WriteLine
+                ("О'бєм куба, м3: " + dobutok(lenght));
+            Console.WriteLine
+                ("Площа поверхні куба, м2: " + plocha(lenght));
+        }
+    }
+}
